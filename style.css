@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Bakbak+One&family=Open+Sans:wght@300;500&family=Poppins:wght@200;300&display=swap");
+body {
+  background-color: #f5f5f5;
+}
+
+h1 {
+  color: #30475e;
+  font-family: "Bakbak One", cursive;
+  font-size: 100px;
+  text-align: center;
+}
+
+table {
+  font-size: 50px;
+  font-family: "Open Sans", sans-serif;
+  margin: auto;
+  width: 60%;
+  text-align: center;
+  border-collapse: collapse;
+  
+}
+
+table,
+td {
+  border: 5px solid black;
+}
+td{
+  padding: 15px;
+}
