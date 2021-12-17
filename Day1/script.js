@@ -54,11 +54,7 @@ function computerTurn() {
 }
 
 function checkWin(user, winner) {
-  if (player.length + computer.length == 9) {
-    gameContinuing = false;
-    showWinner("draw");
-    return;
-  } else if (
+  if (
     user.includes("top-left-image") &&
     user.includes("top-right-image") &&
     user.includes("top-middle-image")
@@ -121,6 +117,10 @@ function checkWin(user, winner) {
   ) {
     gameContinuing = false;
     showWinner(winner);
+    return;
+  } else if (player.length + computer.length == 9) {
+    gameContinuing = false;
+    showWinner("draw");
     return;
   }
 }
