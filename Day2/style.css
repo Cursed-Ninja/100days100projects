@@ -82,7 +82,7 @@ hr {
 }
 
 .generatepasswordbtn {
-  font-size: 3vh;
+  font-size: 115%;
   padding: 3px;
   border-radius: 3px;
 }
@@ -111,11 +111,11 @@ hr {
     background-color: inherit;
     border: none;
   }
-  .footer{
-      font-size: 7px;
+  .footer {
+    font-size: 7px;
   }
-  .copy{
-      float: left;
+  .copy {
+    float: left;
   }
 }
 

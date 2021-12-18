@@ -83,40 +83,44 @@ function generatepassword() {
     document.getElementById("password").innerText = password;
     return;
   }
+  console.log(value);
   var password_list = [];
   if (lowercase_state) {
-    for (let i = 0; i < value / count; i++) {
+    for (let i = 0; i < Math.round(value / count); i++) {
       var randomidx = Math.floor(Math.random() * 26);
       password_list.push(lowercase[randomidx]);
     }
-    value -= value / count;
+    value -= Math.round(value / count);
     count--;
   }
+  console.log(value);
   if (uppercase_state) {
-    for (let i = 0; i < value / count; i++) {
+    for (let i = 0; i < Math.round(value / count); i++) {
       var randomidx = Math.floor(Math.random() * 26);
       password_list.push(uppercase[randomidx]);
     }
-    value -= value / count;
+    value -= Math.round(value / count);
     count--;
   }
+  console.log(value);
   if (symbols_state) {
-    for (let i = 0; i < value / count; i++) {
+    for (let i = 0; i < Math.round(value / count); i++) {
       var randomidx = Math.floor(Math.random() * 10);
       password_list.push(symbols[randomidx]);
     }
-    value -= value / count;
+    value -= Math.round(value / count);
     count--;
   }
+  console.log(value);
   if (numbers_state) {
-    for (let i = 0; i < value / count; i++) {
+    for (let i = 0; i < Math.round(value / count); i++) {
       var randomidx = Math.floor(Math.random() * 10);
       password_list.push(numbers[randomidx]);
     }
-    value -= value / count;
+    value -= Math.round(value / count);
     count--;
   }
-
+  console.log(value);
   password_list = randomiseString(password_list);
   for (let i = 0; i < password_list.length; i++) {
     password += password_list[i];
