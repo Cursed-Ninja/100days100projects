@@ -153,4 +153,9 @@ function copy() {
   var copyText = document.getElementById("password");
   navigator.clipboard.writeText(copyText.innerText);
   alert("Copied the text: " + copyText.innerText);
+  navigator.permissions.query({ name: "clipboard-write" }).then((result) => {
+    if (result.state == "granted" || result.state == "prompt") {
+      navigator.clipboard.writeText(copyText.innerText);
+    }
+  });
 }
