@@ -151,11 +151,9 @@ function randomiseString(array) {
 function copy() {
   console.log("here");
   var copyText = document.getElementById("password");
-  navigator.clipboard.writeText(copyText.innerText);
+  var type = "text/plain";
+  var blob = new Blob([copyText.innerText], { type });
+  var data = [new ClipboardItem({ [type]: blob })];
+  navigator.clipboard.write(data);
   alert("Copied the text: " + copyText.innerText);
-  navigator.permissions.query({ name: "clipboard-write" }).then((result) => {
-    if (result.state == "granted" || result.state == "prompt") {
-      navigator.clipboard.writeText(copyText.innerText);
-    }
-  });
 }
