@@ -46,27 +46,14 @@ for i in range(1, 22):
 
 partition.penup()
 
-partition.goto(-500, 300)
-
-partition.setheading(0)
-
-for i in range(1, 41):
-    if (i % 2) == 0:
-        partition.penup()
-    else:
-        partition.pendown()
-
-    partition.forward(40)
-
 footer = Footer()
 
 game_is_on = True
 
 while game_is_on:
-    time.sleep(0.02)
+    time.sleep(ball.move_speed)
     screen.update()
     ball.move()
-    score.updateScoreboard()
     if ball.ycor() > 380 or ball.ycor() < -380:
         ball.bounce_y()
 
@@ -76,10 +63,12 @@ while game_is_on:
     if ball.xcor() > 480:
         ball.resetBall()
         score.lpoint()
+        score.updateScoreboard()
 
     if ball.xcor() < -480:
         ball.resetBall()
         score.rpoint()
+        score.updateScoreboard()
 
 
 screen.exitonclick()

@@ -7,7 +7,7 @@ class Ball(Turtle):
         self.createBall()
         self.x_move = 10
         self.y_move = 10
-        self.move_speed = 0.01
+        self.move_speed = 0.03
 
     def createBall(self):
         self.shape("circle")
@@ -25,10 +25,10 @@ class Ball(Turtle):
     def bounce_x(self):
         self.setheading((int(self.heading())+180) % 360)
         self.x_move *= -1
-        self.move_speed *= 1.1
+        self.move_speed *= 0.9
 
     def resetBall(self):
         self.goto((0, 0))
         self.x_move *= -1
         self.setheading((int(self.heading())+180) % 360)
-        self.move_speed = 0.01
+        self.move_speed = 0.03
