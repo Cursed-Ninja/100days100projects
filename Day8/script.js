@@ -15,19 +15,19 @@ function sentenceCase() {
   text = text.toLowerCase();
   text = text[0].toUpperCase() + text.substring(1);
   console.log(text);
-  var prev_dot = false;
+  var prev_end = false;
   for (var i = 1; i < text.length; i++) {
-    if (text[i] == ".") {
-      prev_dot = true;
+    if (text[i] == "." || text[i] == "?" || text[i] == "!") {
+      prev_end = true;
     } else {
       if (
-        prev_dot &&
+        prev_end &&
         ((text[i] >= "a" && text[i] <= "z") ||
           (text[i] >= "A" && text[i] <= "Z"))
       ) {
         text =
           text.substring(0, i) + text[i].toUpperCase() + text.substring(i + 1);
-        prev_dot = false;
+        prev_end = false;
       }
     }
   }
