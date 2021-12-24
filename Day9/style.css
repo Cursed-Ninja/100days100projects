@@ -5,7 +5,7 @@ body {
 }
 
 header {
-  font-family: "Bakbak One", cursive;
+  font-family: "Bakbak One", Arial, Helvetica, sans-serif;
   font-size: 25px;
   font-weight: bold;
   background-color: #676fa3;
