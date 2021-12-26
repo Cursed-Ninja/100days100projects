@@ -1,6 +1,6 @@
-var WORK_MIN = 1;
-var SHORT_BREAK_MIN = 1;
-var LONG_BREAK_MIN = 1;
+var WORK_MIN = 25;
+var SHORT_BREAK_MIN = 5;
+var LONG_BREAK_MIN = 15;
 var reps = 0;
 
 function countDown(count) {

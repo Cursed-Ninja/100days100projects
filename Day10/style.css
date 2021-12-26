@@ -39,7 +39,6 @@ body {
 
 .button-passive {
   padding: 15px 25px;
-  font-size: 24px;
   text-align: center;
   cursor: pointer;
   outline: none;
@@ -48,6 +47,7 @@ body {
   border: none;
   border-radius: 8px;
   box-shadow: 0 9px #999;
+  width: 150px;
 }
 
 .button-active {
