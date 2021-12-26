@@ -29,7 +29,7 @@ button:hover {
 
 #clock {
   margin: auto;
-  font-size: min(125px, 20vw);
+  font-size: min(125px, 15vw);
   color: #fff600;
   text-align: center;
   font-family: "Orbitron", sans-serif;
