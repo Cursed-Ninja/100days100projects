@@ -15,8 +15,17 @@ h1 {
 .stopwatch {
   text-align: center;
   font-family: "Share Tech Mono", monospace;
-  font-size: 125px;
+  font-size: 0px;
   color: #676fa3;
+  /* word-spacing: 0px; */
+}
+
+.stopwatch span{
+  font-size: 125px;
+}
+
+#milliseconds{
+  font-size: 45px;
 }
 
 .buttons {
