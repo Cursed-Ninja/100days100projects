@@ -43,7 +43,7 @@ function getExchangeRate() {
   const exchangeRateTxt = document.querySelector(".exchange-rate");
 
   exchangeRateTxt.innerText = "Getting exchange rate...";
-  let url = `http://api.exchangeratesapi.io/v1/latest?access_key=${Api_key}`;
+  let url = `https://api.exchangeratesapi.io/v1/latest?access_key=${Api_key}`;
   fetch(url)
     .then((response) => response.json())
     .then((result) => {
