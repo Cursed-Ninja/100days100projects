@@ -43,13 +43,11 @@ function getExchangeRate() {
   const exchangeRateTxt = document.querySelector(".exchange-rate");
 
   exchangeRateTxt.innerText = "Getting exchange rate...";
-  let url = `https://api.exchangeratesapi.io/v1/latest?access_key=${Api_key}`;
+  let url = `https://free.currconv.com/api/v7/convert?q=${fromCurrency.value}_${toCurrency.value}&compact=ultra&apiKey=${Api_key}`;
   fetch(url)
     .then((response) => response.json())
     .then((result) => {
-      let fromRate = result.rates[`${fromCurrency.value}`];
-      let toRate = result.rates[`${toCurrency.value}`];
-      let exchangeRate = toRate / fromRate;
+      let exchangeRate = result[`${fromCurrency.value}_${toCurrency.value}`];
       let totalExchangeRate = (amountVal * exchangeRate).toFixed(2);
       exchangeRateTxt.innerText = `${amountVal} ${fromCurrency.value} = ${totalExchangeRate} ${toCurrency.value}`;
     })
