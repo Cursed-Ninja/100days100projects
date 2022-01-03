@@ -8,14 +8,13 @@ canvas.width = parseInt(document.querySelector("#paint").offsetWidth);
 canvas.height = parseInt(document.querySelector("#paint").offsetHeight);
 
 var mouse = { x: 0, y: 0 };
-var touch = { x: 0, y: 0 };
+var touch = { x: undefined, y: undefined };
 
 canvas.addEventListener(
   "mousemove",
   function (e) {
     mouse.x = e.pageX - this.offsetLeft;
     mouse.y = e.pageY - this.offsetTop;
-    console.log(e.pageX);
   },
   false
 );
@@ -29,7 +28,6 @@ canvas.addEventListener(
   false
 );
 
-/* Drawing on Paint App */
 ctx.lineJoin = "round";
 ctx.lineCap = "round";
 
@@ -75,14 +73,8 @@ canvas.addEventListener(
 canvas.addEventListener(
   "touchstart",
   function (e) {
-    //   console.log("here");
-    // console.log(e.touches[0].clientX);
     ctx.beginPath();
-    // let rect = canvas.getBoundingClientRect();
-    // let x = e.touches[0].clientX - rect.left;
-    // let y = e.touches[0].clientX - rect.top;
     ctx.moveTo(touch.x, touch.y);
-    // console.log(Touch.clientX);
     canvas.addEventListener("touchmove", onPaintTouch, false);
   },
   false
@@ -102,12 +94,7 @@ var onPaint = function () {
 };
 
 var onPaintTouch = function (e) {
-  //   console.log(e);
-  //   let rect = canvas.getBoundingClientRect();
-  //   let x = e.touches[0].clientX - rect.left;
-  //   let y = e.touches[0].clientX - rect.top;
-  //   console.log("here");
-  console.log(touch.x);
+  if (touch.x == 0 && touch.y == 0) return;
   ctx.lineTo(touch.x, touch.y);
   ctx.stroke();
 };
