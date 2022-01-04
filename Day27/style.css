@@ -16,9 +16,9 @@ body {
 
 body {
   margin: 0;
-  padding-bottom: 25px;
+  /* padding-bottom: 25px; */
   background-color: #ccd1e4;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   position: relative;
 }
 
