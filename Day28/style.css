@@ -1,149 +1,94 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&family=Poppins:wght@400;500;600;700&display=swap");
 
-:root {
-  --bgcolor: #333333;
-}
-
 * {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
 
-html,
-body {
-  overflow: hidden;
-}
-
 body {
   margin: 0;
-  padding-bottom: 25px;
-  background-color: #ccd1e4;
   min-height: 100vh;
-  position: relative;
+  background: #2f3a8f;
 }
 
 .container {
   margin-top: 45px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-}
-
-#settings {
-  margin: 25px auto;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
   text-align: center;
-  gap: 15px;
+  row-gap: 35px;
 }
 
-#settings span {
-  grid-column: 1/-1;
-}
-
-button {
-  height: 35px;
-  width: 35px;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  border-radius: 50%;
-}
-
-#blue {
-  background-color: rgba(0, 140, 255, 0.774);
-}
-
-#red {
-  background-color: rgba(255, 0, 0, 0.719);
-}
-
-#green {
-  background-color: rgba(0, 128, 0, 0.795);
-}
-
-#small {
-  width: 15px;
-  height: 15px;
-  transform: translate(-50%, -50%);
-}
-
-#medium {
-  width: 20px;
-  height: 20px;
-  transform: translate(-50%, -50%);
-}
-
-#large {
-  width: 30px;
-  height: 30px;
-  transform: translate(-50%, -50%);
-}
-
-#X-large {
-  width: 45px;
-  height: 45px;
-  transform: translate(-50%, -50%);
-}
-
-#paint {
-  border: 1px solid black;
-  background: var(--bgcolor);
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  border-radius: 3px;
-  width: 800px;
-  height: 500px;
-}
-
-.sketch {
+.timer {
+  width: min(400px, 50vw);
+  min-width: 180px;
+  height: 200px;
+  background: #feece9;
+  padding: 20px;
+  border-radius: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 25px;
+  margin: auto;
+  font-size: 4rem;
 }
 
-@media only screen and (max-width: 1400px) {
-  #paint {
-    width: 320px;
-    height: 320px;
-  }
+.left-btns,
+.right-btns {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
-@media only screen and (max-width: 750px) {
-  #paint {
-    width: 320px;
-    height: 320px;
-  }
-  .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  #settings {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  #small,
-  #medium,
-  #large,
-  #X-large {
-    transform: none;
-  }
+.control {
+  width: 20px;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  background: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
 }
 
-@media only screen and (max-height: 500px) {
-  #paint {
-    width: 320px;
-    height: 320px;
-  }
-  .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.start-stop {
+  grid-column: 1/-1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  text-align: center;
+  gap: 30px;
+}
+.btn {
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+}
+.btn:hover .btn-slide-show-text1 {
+  margin-left: 65px;
+}
+.btn-rect-to-round {
+  height: 55px;
+  width: 150px;
+  font-size: 16px;
+  font-weight: 600;
+  background: #feece9;
+  cursor: pointer;
+  transition: all 0.5s ease-in 0s;
+}
+.btn-rect-to-round:hover {
+  border-radius: 60px;
+  color: rgb(255, 255, 255) !important;
+}
+.btn-rect-to-round--black {
+  border: 2px solid rgb(51, 51, 51);
+  color: rgb(51, 51, 51) !important;
+}
+.btn-rect-to-round--black:hover {
+  border-color: rgb(51, 51, 51);
+  background: rgb(51, 51, 51);
 }
 
 .footer {
@@ -159,4 +104,10 @@ button {
   left: 0px;
   bottom: 0px;
   width: 100%;
+}
+
+@media only screen and (max-width: 350px) {
+  .btn-rect-to-round {
+    width: 70px;
+  }
 }
