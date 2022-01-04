@@ -52,6 +52,10 @@ function clearScreen() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 }
 
+document.body.addEventListener("touchstart", (e) => {
+  e.preventDefault();
+});
+
 canvas.addEventListener(
   "mousedown",
   function (e) {
