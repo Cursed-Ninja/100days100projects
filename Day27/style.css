@@ -9,12 +9,17 @@
   font-family: "Poppins", sans-serif;
 }
 
+html,
+body {
+  overflow: hidden;
+}
+
 body {
   margin: 0;
   padding-bottom: 25px;
   background-color: #ccd1e4;
   min-height: 100vh;
-  overflow: hidden;
+  position: relative;
 }
 
 .container {
