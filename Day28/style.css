@@ -21,7 +21,7 @@ body {
 }
 
 .timer {
-  width: 400px;
+  width: min(400px, 50vw);
   height: 200px;
   background: #feece9;
   padding: 20px;
@@ -70,7 +70,7 @@ body {
 }
 .btn-rect-to-round {
   height: 55px;
-  width: 200px;
+  width: 150px;
   font-size: 16px;
   font-weight: 600;
   background: #feece9;
