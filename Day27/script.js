@@ -84,6 +84,8 @@ canvas.addEventListener(
   "touchend",
   function (e) {
     canvas.removeEventListener("touchmove", onPaintTouch, false);
+    touch.x = undefined;
+    touch.y = undefined;
   },
   false
 );
