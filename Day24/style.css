@@ -83,6 +83,7 @@ form .drop-list {
   width: auto;
   font-size: 16px;
   margin: 0 -5px 0 5px;
+  background-color: transparent;
 }
 
 .select-box select::-webkit-scrollbar {
