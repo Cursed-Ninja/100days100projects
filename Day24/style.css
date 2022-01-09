@@ -11,11 +11,17 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: #675afe;
+  background: rgb(201, 4, 4);
+  background: linear-gradient(
+    128deg,
+    rgba(201, 4, 4, 1) 0%,
+    rgba(227, 127, 2, 1) 57%,
+    rgba(254, 255, 0, 1) 100%
+  );
 }
 
 .wrapper {
-  width: 400px;
+  width: 370px;
   padding: 30px;
   border-radius: 7px;
   background-color: #fff;
@@ -65,7 +71,7 @@ form .drop-list {
 
 .drop-list .select-box {
   display: flex;
-  width: 150px;
+  width: 130px;
   height: 45px;
   align-items: center;
   justify-content: center;
