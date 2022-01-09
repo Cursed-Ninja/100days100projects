@@ -27,8 +27,8 @@ body {
   flex-direction: column;
   height: fit-content;
   border-radius: 5px;
-  width: 50vw;
-  min-width: fit-content;
+  width: min(90vw, 800px);
+  /* min-width: fit-content; */
   margin: 25px auto;
 }
 
@@ -84,5 +84,11 @@ button {
 @media only screen and (max-width: 400px) {
   html {
     font-size: 40%;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  html {
+    font-size: 20%;
   }
 }
