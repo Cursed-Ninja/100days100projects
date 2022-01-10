@@ -87,6 +87,7 @@ function resetScreen() {
 }
 
 function getNextWord() {
+  input.value = "";
   randomWord.fetchWord();
 }
 
