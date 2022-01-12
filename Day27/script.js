@@ -3,6 +3,8 @@ var ctx = canvas.getContext("2d");
 
 canvas.width = parseInt(document.querySelector("#paint").offsetWidth);
 canvas.height = parseInt(document.querySelector("#paint").offsetHeight);
+console.log(canvas.width);
+console.log(canvas.height);
 
 var mouse = { x: 0, y: 0 };
 var touch = { x: undefined, y: undefined };
