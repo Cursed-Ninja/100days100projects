@@ -4,8 +4,6 @@ var bounds = canvas.getBoundingClientRect();
 
 canvas.width = bounds.right - bounds.left;
 canvas.height = bounds.bottom - bounds.top;
-console.log(canvas.width);
-console.log(canvas.height);
 
 var mouse = { x: 0, y: 0 };
 var touch = { x: undefined, y: undefined };
