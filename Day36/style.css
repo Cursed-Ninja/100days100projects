@@ -94,10 +94,15 @@ header {
 .link {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: min(800px, 90vw);
   background-color: white;
   padding: 1em;
   border-radius: 5px;
+}
+
+.original-link {
+  font-size: 1em;
 }
 
 .shorten {
@@ -109,11 +114,12 @@ header {
 
 .shortened-link {
   color: hsl(180, 66%, 49%);
+  font-size: 1em;
 }
 
 .copy {
   padding: 0.5em;
-  width: 100px;
+  width: 8em;
   text-transform: capitalize;
   background-color: hsl(180, 66%, 49%);
   outline: none;
@@ -123,6 +129,7 @@ header {
   color: white;
   font-family: inherit;
   transition: 0s 0.5s ease;
+  font-size: 1em;
 }
 
 .copy:hover {
