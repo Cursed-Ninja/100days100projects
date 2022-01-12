@@ -70,6 +70,8 @@ canvas.addEventListener(
   "mouseup",
   function () {
     canvas.removeEventListener("mousemove", onPaint, false);
+    mouse.x = undefined;
+    mouse.y = undefined;
   },
   false
 );
