@@ -9,6 +9,7 @@ body {
   font-family: "Poppins", sans-serif;
   background: linear-gradient(white, hsl(0, 0%, 75%)) no-repeat;
   min-height: 100vh;
+  padding-bottom: 25px;
 }
 
 header {
