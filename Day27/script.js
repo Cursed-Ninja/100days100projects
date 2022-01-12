@@ -1,9 +1,6 @@
 var canvas = document.getElementById("paint");
 var ctx = canvas.getContext("2d");
 
-var sketch = document.getElementById("sketch");
-var sketch_style = getComputedStyle(sketch);
-
 canvas.width = parseInt(document.querySelector("#paint").offsetWidth);
 canvas.height = parseInt(document.querySelector("#paint").offsetHeight);
 
@@ -13,8 +10,13 @@ var touch = { x: undefined, y: undefined };
 canvas.addEventListener(
   "mousemove",
   function (e) {
-    mouse.x = e.pageX - this.offsetLeft;
-    mouse.y = e.pageY - this.offsetTop;
+    var bounds = canvas.getBoundingClientRect();
+    mouse.x = e.pageX - bounds.left - scrollX;
+    mouse.y = e.pageY - bounds.top - scrollY;
+    mouse.x /= bounds.width;
+    mouse.y /= bounds.height;
+    mouse.x *= canvas.width;
+    mouse.y *= canvas.height;
   },
   false
 );
