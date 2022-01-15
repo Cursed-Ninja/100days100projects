@@ -160,6 +160,36 @@ header {
   width: 100%;
 }
 
+.loader {
+  border: 0.2rem solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 0.2rem solid #3498db;
+  width: 2.5rem;
+  height: 2.5rem;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  margin-left: 1rem;
+  visibility: hidden;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 @media only screen and (max-width: 600px) {
   html {
     font-size: 70%;

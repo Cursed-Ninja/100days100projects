@@ -3,6 +3,7 @@ const shortenBtn = document.querySelector(".shorten-btn");
 const errorMsg = document.querySelector(".error-message");
 const displayDiv = document.querySelector(".links");
 const copyBtns = document.querySelectorAll(".copy");
+const loader = document.querySelector("#loader");
 
 shortenBtn.addEventListener("click", shorten);
 inputText.addEventListener("keydown", (e) => {
@@ -14,6 +15,9 @@ inputText.addEventListener("keydown", (e) => {
 });
 
 function shorten() {
+  loader.style.visibility = "visible";
+  inputText.disabled = true;
+  shortenBtn.removeEventListener("click", shorten);
   fetch("https://api.shrtco.de/v2/shorten?url=" + inputText.value)
     .then((Response) => Response.json())
     .then((data) => {
@@ -28,6 +32,9 @@ function shorten() {
 function displayError() {
   errorMsg.classList.remove("invisible");
   inputText.classList.add("input-error");
+  loader.style.visibility = "hidden";
+  inputText.disabled = false;
+  shortenBtn.addEventListener("click", shorten);
 }
 
 function createData(data) {
@@ -56,6 +63,9 @@ function createData(data) {
   div.appendChild(span1);
   div.appendChild(span3);
   displayDiv.appendChild(div);
+  loader.style.visibility = "hidden";
+  inputText.disabled = false;
+  shortenBtn.addEventListener("click", shorten);
 }
 
 function copy(Element) {
