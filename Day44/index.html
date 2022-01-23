@@ -1,1 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="calculator.png" type="image/png">
+    <script src="script.js" defer></script>
+    <title>Tip Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="left-section">
+                <label for="">Bill</label>
+                <input type="number" id="bill" placeholder="0">
+            </div>
+            <div class="left-section">
+                <label for="">Select tip %</label>
+                <div class="btn-grp">
+                    <button id="help" value="5">5%</button>
+                    <button value="10">10%</button>
+                    <button value="15">15%</button>
+                    <button value="20">20%</button>
+                    <button value="25">25%</button>
+                    <button value="50">50%</button>
+                </div>
+            </div>
+            <div class="left-section">
+                <label for="">No. of people</label>
+                <input type="number" id="person" placeholder="0">
+            </div>
+        </div>
+        <div class="right">
+            <div class="right-section">
+                <div class="per-person"> <span>Tip Amount<br><span class="amt">/person</span></span><span
+                        id="tip-amount">00.00</span></div>
+                <div class="per-person"><span>Total<br><span class="amt">/person</span></span><span
+                        id="total-amount">00.00</span></div>
+            </div>
+            <button id="reset">Reset</button>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-note">
+            #100days100projects
+        </div>
+        <div class="footer-note">
+            Made by Shivam Mahajan
+        </div>
+        <div class="footer-note">
+            Day 44
+        </div>
+    </footer>
+</body>
+
+</html>

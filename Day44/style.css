@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&family=Space+Mono:wght@400;700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background-color: hsl(185, 41%, 84%);
+  min-height: 100vh;
+  font-family: "Space Mono", monospace;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30vw, 500px));
+  padding: 1.5em;
+  background-color: white;
+  border-radius: 1.5em;
+  gap: 2.5em;
+  margin-bottom: 25px;
+}
+
+.left {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2.2em;
+}
+
+.left-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 0.5em;
+  width: 100%;
+}
+
+label {
+  font-weight: 700;
+  color: hsl(186, 14%, 43%);
+}
+
+.btn-grp {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+}
+
+.btn-grp button {
+  background-color: hsl(183, 100%, 15%);
+  font-family: inherit;
+  font-size: 1.5em;
+  color: white;
+  outline: none;
+  border: none;
+  padding: 0.25em 1em;
+  cursor: pointer;
+  width: 6em;
+  border-radius: 0.7em;
+}
+
+.btn-grp button:hover {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(189, 8%, 34%);
+}
+
+input {
+  outline: none;
+  border: none;
+  background-color: hsl(185, 41%, 84%);
+  font-size: 1.5em;
+  font-family: inherit;
+  text-align: right;
+  padding: 0.3em 0.8em;
+  border-radius: 0.5em;
+  color: hsl(183, 100%, 15%);
+  width: 100%;
+}
+
+.right {
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 1.5em;
+  padding: 1.5em;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.right-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.8em;
+  color: white;
+}
+
+.amt {
+  color: hsl(184, 14%, 56%);
+}
+
+.per-person {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#tip-amount,
+#total-amount {
+  font-size: 3em;
+  color: hsl(172, 67%, 45%);
+}
+
+#reset {
+  width: 60%;
+  background-color: hsl(172, 67%, 45%);
+  margin: auto;
+  outline: none;
+  border: none;
+  padding: 0.25em 1em;
+  text-transform: uppercase;
+  font-family: inherit;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 700;
+  border-radius: 0.25em;
+  margin-top: 25px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0px;
+  width: 100%;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  color: #f5f5f5;
+  background-color: black;
+  padding: 10px 0px;
+  font-size: min(2vw, 15px);
+  width: 100%;
+}
+
+@media only screen and (max-width: 550px) {
+  html {
+    font-size: 60%;
+  }
+}
