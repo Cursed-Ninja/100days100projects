@@ -1,14 +1,6 @@
 const latinput = document.querySelector("#lat");
 const longinput = document.querySelector("#long");
 const find = document.querySelector("#find");
-const place = document.querySelector("#place");
-const api = "805146dec81f51afb8657668e6c1731a";
-const url = "http://api.positionstack.com/v1/forward?";
-
-find.addEventListener("click", searchPlace);
-place.addEventListener("keypress", (e) => {
-  if (e.key === "Enter") searchPlace();
-});
 
 var map = L.map("map").setView([0, 0], 1);
 
@@ -41,16 +33,4 @@ function moveto(lat, long) {
   map.removeLayer(marker);
   marker = L.marker([lat, long]).addTo(map);
   map.setView([lat, long], zoom);
-}
-
-function searchPlace() {
-  var text = place.value;
-  fetch(url + "access_key=" + api + "&query=" + text)
-    .then((Response) => Response.json())
-    .then((data) => {
-      latinput.value = data.data[0].latitude;
-      longinput.value = data.data[0].longitude;
-      moveto(latinput.value, longinput.value);
-      console.log(data.data[0].latitude);
-    });
 }

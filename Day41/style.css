@@ -39,14 +39,6 @@ header {
   margin: 15px;
 }
 
-.container-2 {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
-
 .lat-long {
   display: flex;
   justify-content: center;
@@ -70,44 +62,6 @@ header {
   background: #eff;
   color: #222;
   border: 2px solid black;
-}
-
-.place {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 80%;
-}
-
-#place {
-  background: white;
-  border: 2px solid black;
-  border-radius: 2px;
-  font-family: inherit;
-  width: 80%;
-}
-
-#find {
-  padding: 0.3em;
-  margin-left: 10px;
-  outline: none;
-  text-transform: uppercase;
-  background: white;
-  border: 2px solid black;
-  border-radius: 2px;
-  font-family: inherit;
-  cursor: pointer;
-  width: 20%;
-  transition: 0.2s;
-}
-
-#find:hover {
-  background: #0693e3ff;
-  color: white;
-}
-
-#find:active {
-  transform: translateY(1px);
 }
 
 input {
