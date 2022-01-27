@@ -67,13 +67,13 @@ function handleJump(delta) {
 }
 
 function onJump(e) {
-  // console.log(e.code);
   if (e.code !== "Space" || isJumping) return;
   yVelocity = JUMP_SPEED;
   isJumping = true;
 }
 
 function onJumpPhone(e) {
+  if (isJumping) return;
   yVelocity = JUMP_SPEED;
   isJumping = true;
 }
