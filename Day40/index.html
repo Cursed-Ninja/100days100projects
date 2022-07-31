@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Hangman</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="word"></div>
+        <div class="guess">
+            <input type="text" placeholder="Enter a letter..." id="guessletter" maxlength="1">
+            <button id="submit">Guess</button>
+        </div>
+
+        <div class="wrong-div">
+            <p class="wrong-text">Incorrect letters: </p>
+            <div class="wrong"></div>
+        </div>
+        <div class="message">
+            <h1 class="title"></h1>
+            <p class="text">Refresh to play again!</p>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-note">
+            #100days100projects
+        </div>
+        <div class="footer-note">
+            Made by Shivam Mahajan
+        </div>
+        <div class="footer-note">
+            Day 40
+        </div>
+    </footer>
+</body>
+
+</html>

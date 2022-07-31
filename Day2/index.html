@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>
+            Password Generator
+        </h1>
+
+        <hr id="rule">
+        <div class="content">
+            Password Length:
+        </div>
+        <div>
+            <select name="password_length" class="dropdown" id="password_length">
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16" selected>16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+            </select>
+        </div>
+        <br>
+        <div class="content">
+            Include symbols:
+        </div>
+
+        <div>
+            <input type="checkbox" name="" class="checkbox" id="symbols" checked> <span class="examples"> like
+                (@,#,$,*,etc.)</span>
+        </div>
+        <br>
+        <div class="content">
+            Include numbers:
+        </div>
+
+        <div>
+            <input type="checkbox" name="" class="checkbox" id="numbers" checked> <span class="examples"> like
+                (1,2,3,4,etc.)</span>
+        </div>
+        <br>
+        <div class="content">
+            Include lowercase characters:
+        </div>
+
+        <div>
+            <input type="checkbox" name="" class="checkbox" id="lowercase" checked> <span class="examples"> like
+                (a,b,c,d,etc.)</span>
+        </div>
+        <br>
+        <div class="content">
+            Include uppercase characters:
+        </div>
+
+        <div>
+            <input type="checkbox" name="" class="checkbox" id="uppercase" checked> <span class="examples"> like
+                (A,B,C,D,etc.)</span>
+        </div>
+        <br>
+        <div class="password">
+            <button class="copy" onclick="copy()">
+                📋
+            </button>
+            <span id="password"> Your password will appear here</span>
+        </div>
+        <div class="generatepassword">
+            <button class="generatepasswordbtn" onclick="generatepassword()">
+                Generate Password
+            </button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+<footer class="footer">
+    <div class="footer-note">
+        #100days100projects
+    </div>
+    <div class="footer-note">
+        Made by Shivam Mahajan
+    </div>
+    <div class="footer-note">
+        Day 2
+    </div>
+</footer>
+
+</html>

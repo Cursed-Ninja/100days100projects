@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+}
+
+.flip {
+  position: relative;
+  width: 60px;
+  height: 100px;
+  margin: 2px;
+  font-size: 66px;
+  line-height: 100px;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+.digital::before,
+.digital::after {
+  position: absolute;
+  content: attr(data-number);
+  left: 0;
+  right: 0;
+  color: white;
+  background-color: black;
+  overflow: hidden;
+  perspective: 160px;
+}
+
+.digital::before {
+  top: 0;
+  bottom: 50%;
+  border-bottom: 1px solid #666;
+  border-radius: 10px 10px 0 0;
+}
+
+.digital::after {
+  top: 50%;
+  bottom: 0;
+  line-height: 0;
+  border-radius: 0 0 10px 10px;
+}
+
+.digital.front::after,
+.digital.back::before {
+  z-index: 1;
+}
+
+.digital.back::after {
+  transform-origin: top center;
+  transform: rotateX(0.5turn);
+  z-index: 2;
+}
+
+.digital.front::before {
+  z-index: 3;
+}
+
+.divider {
+  font-size: 66px;
+}

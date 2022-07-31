@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Bakbak+One&family=Open+Sans:wght@300;500&family=Poppins:wght@200;300&display=swap");
+
+:root {
+  --dark-clock-color: #00fff5;
+  --dark-body-color: #212121;
+  --light-body-color: #ffffff;
+  --light-clock-color: #032d3c;
+  --current-clock-color: var(--dark-clock-color);
+}
+
+body {
+  background-color: var(--dark-body-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  margin: 15px;
+  border-radius: 50%;
+  height: 5vw;
+  max-height: 40px;
+  max-width: 40px;
+  width: 5vw;
+  background-image: url("moon.png");
+  background-size: 100%;
+  border: none;
+  background-color: white;
+  background-repeat: no-repeat;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.clock {
+  border-radius: 50%;
+  height: min(90vw,85vh);
+  width: min(90vw,85vh);
+  border: 2px solid var(--current-clock-color);
+  position: relative;
+  margin-top: 25px;
+}
+
+.hour,
+.minute,
+.second {
+  position: absolute;
+  background: var(--current-clock-color);
+  border-radius: 10px;
+  transform-origin: bottom;
+}
+.hour {
+  width: 1%;
+  height: 25%;
+  top: 25%;
+  left: 49.5%;
+  opacity: 0.8;
+}
+.minute {
+  width: 0.5%;
+  height: 35%;
+  top: 15%;
+  left: 49.75%;
+  opacity: 0.8;
+}
+.second {
+  width: 0.3%;
+  height: 40%;
+  top: 10%;
+  left: 49.85%;
+  opacity: 0.8;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  color: #f5f5f5;
+  background-color: black;
+  padding: 10px;
+  font-size: min(2vw, 15px);
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+}

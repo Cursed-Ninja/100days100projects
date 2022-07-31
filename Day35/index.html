@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="rock-paper-scissors.png" type="image/png">
+  <script src="script.js" defer></script>
+  <title>Rock, Paper, Scissors</title>
+</head>
+
+<body>
+  <div class="score-board">
+    <div class="title">
+      rock paper scissors
+    </div>
+    <div class="score">
+      <span class="score-title">
+        score
+      </span>
+      <span id="score">
+        0
+      </span>
+    </div>
+  </div>
+
+  <div class="container">
+    <button class="paper options" id="paperBtn"></button>
+    <button class="scissors options" id="scissorsBtn"></button>
+    <button class="rock colspan-2 options" id="rockBtn"></button>
+  </div>
+
+  <div class="game invisible">
+    <span class="turn">You Picked</span>
+    <span class="turn">Opponent Picked</span>
+    <button class="" id="player"></button>
+    <button class="opponent" id="opponent"></button>
+  </div>
+
+  <div class="result-div invisible">
+    <span id="result">
+      You lose
+    </span>
+    <button id="play-again">
+      Play Again
+    </button>
+  </div>
+  <footer class="footer">
+    <div class="footer-note">
+      #100days100projects
+    </div>
+    <div class="footer-note">
+      Made by Shivam Mahajan
+    </div>
+    <div class="footer-note">
+      Day 35
+    </div>
+  </footer>
+</body>
+
+</html>

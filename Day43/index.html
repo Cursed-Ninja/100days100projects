@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Guess the time</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="clock-body">
+            <div class="hours"></div>
+            <div class="disc disc-top"></div>
+            <div class="disc disc-bottom"></div>
+            <div class="hand minute"></div>
+            <div class="hand hour"></div>
+        </div>
+        <div class="input-div">
+            <div class="hour-div">
+                <label for="hour">Hour</label>
+                <input type="number" class="input" id="hour">
+            </div>
+            <div class="minute-div">
+                <label for="minute">Minute</label>
+                <input type="number" class="input" id="minute">
+            </div>
+        </div>
+        <button class="submit">
+            Submit
+        </button>
+    </div>
+    <div class="wrapper invisible">
+        <div class="modal">
+            <span class="emoji round">🏆</span>
+            <h1>Excellent</h1>
+            <button class="modal-btn">Continue</button>
+        </div>
+        <div id="confetti-wrapper">
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-note">
+            #100days100projects
+        </div>
+        <div class="footer-note">
+            Made by Shivam Mahajan
+        </div>
+        <div class="footer-note">
+            Day 43
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

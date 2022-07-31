@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin="" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="location.png" type="image/png">
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+  <title>Lat-Long Finder</title>
+</head>
+
+<body>
+  <header>Lat-Long Finder</header>
+  <div class="container">
+    <div class="lat-long">
+      <div class="latitude">
+        <legend>Latitude </legend>
+        <input type="number" step=0.00001 id="lat" disabled value="0.00000" />
+      </div>
+      <div class="longitude">
+        <legend>Longitude </legend>
+        <input type="number" step=0.00001 id="long" disabled value="0.00000" />
+      </div>
+    </div>
+  </div>
+  <div id="map"></div>
+  <footer class="footer">
+    <div class="footer-note">
+      #100days100projects
+    </div>
+    <div class="footer-note">
+      Made by Shivam Mahajan
+    </div>
+    <div class="footer-note">
+      Day 41
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
