@@ -1,0 +1,296 @@
+[
+  {
+    "Day": 1,
+    "Name": "Tic Tac Toe",
+    "LiveSite": "https://cursed-ninja.github.io/100days100projects/Day1/index.html",
+    "Github": "https://github.com/Cursed-Ninja/100days100projects/tree/main/Day1"
+  },
+  {
+    "Day": 2,
+    "Name": "Password Generator",
+    "LiveSite": "https://cursed-ninja.github.io/100days100projects/Day2/index.html",
+    "Github": "https://github.com/Cursed-Ninja/100days100projects/tree/main/Day2"
+  },
+  {
+    "Day": 3,
+    "Name": "Snake Game",
+    "LiveSite": "No Link",
+    "Github": "https://github.com/Cursed-Ninja/100days100projects/tree/main/Day3"
+  },
+  {
+    "Day": 4,
+    "Name": "Pong Game",
+    "LiveSite": "No Link",
+    "Github": "https://github.com/Cursed-Ninja/100days100projects/tree/main/Day4"
+  },
+  {
+    "Day": 5,
+    "Name": "Turtle Crossing",
+    "LiveSite": "No Link",
+    "Github": "https://github.com/Cursed-Ninja/100days100projects/tree/main/Day5"
+  },
+  {
+    "Day": 6,
+    "Name": "Guess the State and UT",
+    "LiveSite": "No Link",
+    "Github": "https://github.com/Cursed-Ninja/100days100projects/tree/main/Day6"
+  },
+  {
+    "Day": 7,
+    "Name": "Analog Clock",
+    "LiveSite": "https://cursed-ninja.github.io/100days100projects/Day7/index.html",
+    "Github": "https://github.com/Cursed-Ninja/100days100projects/tree/main/Day7"
+  },
+  {
+    "Day": 8,
+    "Name": "Text Formatter",
+    "LiveSite": "https://cursed-ninja.github.io/100days100projects/Day8/index.html",
+    "Github": "https://github.com/Cursed-Ninja/100days100projects/tree/main/Day8"
+  },
+  {
+    "Day": 9,
+    "Name": "Bubble Sort Visualizer",
+    "LiveSite": "https://cursed-ninja.github.io/100days100projects/Day9/index.html",
+    "Github": "https://github.com/Cursed-Ninja/100days100projects/tree/main/Day9"
+  },
+  {
+    "Day": 10,
+    "Name": "Pomodoro",
+    "LiveSite": "https://cursed-ninja.github.io/100days100projects/Day10/index.html",
+    "Github": "https://github.com/Cursed-Ninja/100days100projects/tree/main/Day10"
+  },
+  {
+    "Day": 11,
+    "Name": "Digital Clock",
+    "LiveSite": "https://cursed-ninja.github.io/100days100projects/Day11/index.html",
+    "Github": "https://github.com/Cursed-Ninja/100days100projects/tree/main/Day11"
+  },
+  {
+    "Day": 12,
+    "Name": "Dice Roller",
+    "LiveSite": "https://cursed-ninja.github.io/100days100projects/Day12/index.html",
+    "Github": "https://github.com/Cursed-Ninja/100days100projects/tree/main/Day12"
+  },
+  {
+    "Day": 13,
+    "Name": "Stopwatch",
+    "LiveSite": "https://cursed-ninja.github.io/100days100projects/Day13/index.html",
+    "Github": "https://github.com/Cursed-Ninja/100days100projects/tree/main/Day13"
+  },
+  {
+    "Day": 14,
+    "Name": "Calculator",
+    "LiveSite": "https://cursed-ninja.github.io/100days100projects/Day14/index.html",
+    "Github": "https://github.com/Cursed-Ninja/100days100projects/tree/main/Day14"
+  },
+  {
+    "Day": 15,
+    "Name": "OnScreen Keyboard",
+    "LiveSite": "https://cursed-ninja.github.io/100days100projects/Day15/index.html",
+    "Github": "https://github.com/Cursed-Ninja/100days100projects/tree/main/Day15"
+  },
+  {
+    "Day": 16,
+    "Name": "Speed Typing",
+    "LiveSite": "https://cursed-ninja.github.io/100days100projects/Day16/index.html",
+    "Github": "https://github.com/Cursed-Ninja/100days100projects/tree/main/Day16"
+  },
+  {
+    "Day": 17,
+    "Name": "QR Code Generator",
+    "LiveSite": "https://cursed-ninja.github.io/100days100projects/Day17/index.html",
+    "Github": "https://github.com/Cursed-Ninja/100days100projects/tree/main/Day17"
+  },
+  {
+    "Day": 18,
+    "Name": "Arrow Game",
+    "LiveSite": "https://cursed-ninja.github.io/100days100projects/Day18/index.html",
+    "Github": "https://github.com/Cursed-Ninja/100days100projects/tree/main/Day18"
+  },
+  {
+    "Day": 19,
+    "Name": "Calender",
+    "LiveSite": "https://cursed-ninja.github.io/100days100projects/Day19/index.html",
+    "Github": "https://github.com/Cursed-Ninja/100days100projects/tree/main/Day19"
+  },
+  {
+    "Day": 20,
+    "Name": "Currency Converter",
+    "LiveSite": "https://cursed-ninja.github.io/100days100projects/Day20/index.html",
+    "Github": "https://github.com/Cursed-Ninja/100days100projects/tree/main/Day20"
+  },
+  {
+    "Day": 21,
+    "Name": "Fan",
+    "LiveSite": "https://cursed-ninja.github.io/100days100projects/Day21/index.html",
+    "Github": "https://github.com/Cursed-Ninja/100days100projects/tree/main/Day21"
+  },
+  {
+    "Day": 22,
+    "Name": "Todo App",
+    "LiveSite": "https://cursed-ninja.github.io/100days100projects/Day22/index.html",
+    "Github": "https://github.com/Cursed-Ninja/100days100projects/tree/main/Day22"
+  },
+  {
+    "Day": 23,
+    "Name": "Piano",
+    "LiveSite": "https://cursed-ninja.github.io/100days100projects/Day23/index.html",
+    "Github": "https://github.com/Cursed-Ninja/100days100projects/tree/main/Day23"
+  },
+  {
+    "Day": 24,
+    "Name": "Length Converter",
+    "LiveSite": "https://cursed-ninja.github.io/100days100projects/Day24/index.html",
+    "Github": "https://github.com/Cursed-Ninja/100days100projects/tree/main/Day24"
+  },
+  {
+    "Day": 25,
+    "Name": "Drum Kit",
+    "LiveSite": "https://cursed-ninja.github.io/100days100projects/Day25/index.html",
+    "Github": "https://github.com/Cursed-Ninja/100days100projects/tree/main/Day25"
+  },
+  {
+    "Day": 26,
+    "Name": "Encryptor",
+    "LiveSite": "https://cursed-ninja.github.io/100days100projects/Day26/index.html",
+    "Github": "https://github.com/Cursed-Ninja/100days100projects/tree/main/Day26"
+  },
+  {
+    "Day": 27,
+    "Name": "Paint",
+    "LiveSite": "https://cursed-ninja.github.io/100days100projects/Day27/index.html",
+    "Github": "https://github.com/Cursed-Ninja/100days100projects/tree/main/Day27"
+  },
+  {
+    "Day": 28,
+    "Name": "Timer",
+    "LiveSite": "https://cursed-ninja.github.io/100days100projects/Day28/index.html",
+    "Github": "https://github.com/Cursed-Ninja/100days100projects/tree/main/Day28"
+  },
+  {
+    "Day": 29,
+    "Name": "Quizzlet",
+    "LiveSite": "https://cursed-ninja.github.io/100days100projects/Day29/index.html",
+    "Github": "https://github.com/Cursed-Ninja/100days100projects/tree/main/Day29"
+  },
+  {
+    "Day": 30,
+    "Name": "Whack A Mole",
+    "LiveSite": "https://cursed-ninja.github.io/100days100projects/Day30/index.html",
+    "Github": "https://github.com/Cursed-Ninja/100days100projects/tree/main/Day30"
+  },
+  {
+    "Day": 31,
+    "Name": "Guess the Word!",
+    "LiveSite": "https://cursed-ninja.github.io/100days100projects/Day31/index.html",
+    "Github": "https://github.com/Cursed-Ninja/100days100projects/tree/main/Day31"
+  },
+  {
+    "Day": 32,
+    "Name": "Factorial Calculator",
+    "LiveSite": "https://cursed-ninja.github.io/100days100projects/Day32/index.html",
+    "Github": "https://github.com/Cursed-Ninja/100days100projects/tree/main/Day32"
+  },
+  {
+    "Day": 33,
+    "Name": "Weather",
+    "LiveSite": "https://cursed-ninja.github.io/100days100projects/Day33/index.html",
+    "Github": "https://github.com/Cursed-Ninja/100days100projects/tree/main/Day33"
+  },
+  {
+    "Day": 34,
+    "Name": "Unscramble The Word",
+    "LiveSite": "https://cursed-ninja.github.io/100days100projects/Day34/index.html",
+    "Github": "https://github.com/Cursed-Ninja/100days100projects/tree/main/Day34"
+  },
+  {
+    "Day": 35,
+    "Name": "Rock Paper Scissors",
+    "LiveSite": "https://cursed-ninja.github.io/100days100projects/Day35/index.html",
+    "Github": "https://github.com/Cursed-Ninja/100days100projects/tree/main/Day35"
+  },
+  {
+    "Day": 36,
+    "Name": "URL Shortner",
+    "LiveSite": "https://cursed-ninja.github.io/100days100projects/Day36/index.html",
+    "Github": "https://github.com/Cursed-Ninja/100days100projects/tree/main/Day36"
+  },
+  {
+    "Day": 37,
+    "Name": "Days until Completion",
+    "LiveSite": "https://cursed-ninja.github.io/100days100projects/Day37/index.html",
+    "Github": "https://github.com/Cursed-Ninja/100days100projects/tree/main/Day37"
+  },
+  {
+    "Day": 38,
+    "Name": "Simon Game",
+    "LiveSite": "https://cursed-ninja.github.io/100days100projects/Day38/index.html",
+    "Github": "https://github.com/Cursed-Ninja/100days100projects/tree/main/Day38"
+  },
+  {
+    "Day": 39,
+    "Name": "Guess The Number",
+    "LiveSite": "https://cursed-ninja.github.io/100days100projects/Day39/index.html",
+    "Github": "https://github.com/Cursed-Ninja/100days100projects/tree/main/Day39"
+  },
+  {
+    "Day": 40,
+    "Name": "Hangman",
+    "LiveSite": "https://cursed-ninja.github.io/100days100projects/Day40/index.html",
+    "Github": "https://github.com/Cursed-Ninja/100days100projects/tree/main/Day40"
+  },
+  {
+    "Day": 41,
+    "Name": "Lat-Long Finder",
+    "LiveSite": "https://cursed-ninja.github.io/100days100projects/Day41/index.html",
+    "Github": "https://github.com/Cursed-Ninja/100days100projects/tree/main/Day41"
+  },
+  {
+    "Day": 42,
+    "Name": "Dino Game",
+    "LiveSite": "https://cursed-ninja.github.io/100days100projects/Day42/index.html",
+    "Github": "https://github.com/Cursed-Ninja/100days100projects/tree/main/Day42"
+  },
+  {
+    "Day": 43,
+    "Name": "Guess The Time",
+    "LiveSite": "https://cursed-ninja.github.io/100days100projects/Day43/index.html",
+    "Github": "https://github.com/Cursed-Ninja/100days100projects/tree/main/Day43"
+  },
+  {
+    "Day": 44,
+    "Name": "Tip Calculator",
+    "LiveSite": "https://cursed-ninja.github.io/100days100projects/Day44/index.html",
+    "Github": "https://github.com/Cursed-Ninja/100days100projects/tree/main/Day44"
+  },
+  {
+    "Day": 45,
+    "Name": "Guess The Color",
+    "LiveSite": "https://cursed-ninja.github.io/100days100projects/Day45/index.html",
+    "Github": "https://github.com/Cursed-Ninja/100days100projects/tree/main/Day45"
+  },
+  {
+    "Day": 46,
+    "Name": "My Notes",
+    "LiveSite": "https://cursed-ninja.github.io/100days100projects/Day46/index.html",
+    "Github": "https://github.com/Cursed-Ninja/100days100projects/tree/main/Day46"
+  },
+  {
+    "Day": 47,
+    "Name": "Flappy Bird",
+    "LiveSite": "https://cursed-ninja.github.io/100days100projects/Day47/index.html",
+    "Github": "https://github.com/Cursed-Ninja/100days100projects/tree/main/Day47"
+  },
+  {
+    "Day": 48,
+    "Name": "ASCII Art Generator",
+    "LiveSite": "https://cursed-ninja.github.io/100days100projects/Day48/index.html",
+    "Github": "https://github.com/Cursed-Ninja/100days100projects/tree/main/Day48"
+  },
+  {
+    "Day": 49,
+    "Name": "Random Color Generator",
+    "LiveSite": "https://cursed-ninja.github.io/100days100projects/Day49/index.html",
+    "Github": "https://github.com/Cursed-Ninja/100days100projects/tree/main/Day49"
+  }
+]
