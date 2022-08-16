@@ -25,6 +25,7 @@
 .App > header > h3 {
   color: #393e46;
   font-family: "Poppins", sans-serif;
+  text-align: center;
 }
 
 .link-container {
@@ -43,6 +44,7 @@
   color: #eeeeee;
   justify-items: center;
   padding: 15px;
+  text-align: center;
 }
 
 .link-header {
